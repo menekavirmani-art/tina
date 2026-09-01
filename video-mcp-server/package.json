@@ -1,0 +1,30 @@
+{
+  "name": "video-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server exposing ffmpeg-based video editing tools (trim, concat, transcode, resize, speed, watermark, subtitles, audio) for Claude Code and other MCP clients",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "video-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

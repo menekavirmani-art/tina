@@ -317,6 +317,10 @@ You can also invoke skills directly:
 - `revops` - Lead lifecycle, scoring, routing, pipeline management
 - `sales-enablement` - Sales decks, one-pagers, objection docs, demo scripts
 
+## video-mcp-server
+
+This repo also includes `video-mcp-server`, an MCP server exposing ffmpeg-based video editing tools (trim, concat, transcode, resize, speed, watermark, subtitles, audio) for Claude Code and other MCP clients. See [`video-mcp-server/README.md`](video-mcp-server/README.md) for details.
+
 ## Contributing
 
 Found a way to improve a skill? Have a new skill to suggest? PRs and issues welcome!
