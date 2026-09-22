@@ -73,6 +73,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | linkedin-ads | Ads | ✓ | - | [✓](clis/linkedin-ads.js) | - | [linkedin-ads.md](integrations/linkedin-ads.md) |
 | tiktok-ads | Ads | ✓ | - | [✓](clis/tiktok-ads.js) | ✓ | [tiktok-ads.md](integrations/tiktok-ads.md) |
 | zapier | Automation | ✓ | ✓ | [✓](clis/zapier.js) | ✓ | [zapier.md](integrations/zapier.md) |
+| n8n | Automation | ✓ | ✓ | ✓ | - | [n8n.md](integrations/n8n.md) |
 | hotjar | CRO | ✓ | - | [✓](clis/hotjar.js) | - | [hotjar.md](integrations/hotjar.md) |
 | optimizely | A/B Testing | ✓ | - | [✓](clis/optimizely.js) | ✓ | [optimizely.md](integrations/optimizely.md) |
 | calendly | Scheduling | ✓ | - | [✓](clis/calendly.js) | - | [calendly.md](integrations/calendly.md) |
@@ -237,8 +238,9 @@ Workflow automation and integration platforms.
 | Tool | Best For | MCP Available |
 |------|----------|:-------------:|
 | **zapier** | No-code integrations + SDK for 8,000+ apps | ✓ |
+| **n8n** | Self-hosted workflow automation, custom nodes | ✓ |
 
-**Agent recommendation**: Zapier SDK for agents that need to interact with any app directly. Zaps for always-on automations.
+**Agent recommendation**: Zapier SDK for agents that need to interact with any app directly. Zaps for always-on automations. n8n for self-hosted/customizable workflows or when agents need direct MCP access to a running instance.
 
 ### CRO & A/B Testing
 
@@ -534,6 +536,7 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **google-ads** - Ad campaign management
 - **resend** - Transactional email sending
 - **zapier** - Workflow automation + SDK for 8,000+ app integrations
+- **n8n** - Self-hostable workflow automation, custom nodes
 - **zoominfo** - B2B contacts and intent data
 - **clay** - Data enrichment and outbound automation
 - **supermetrics** - Cross-platform marketing data
