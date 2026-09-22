@@ -59,6 +59,7 @@ Current versions of all skills. Agents can compare against local versions to che
 ### 2.10.1 (2026-09-22)
 
 - Added `tools/clis/graphify.js` — a zero-dependency local CLI that turns CSV/JSON data into SVG charts (bar, line, pie, sparkline), with grouped/multi-series support via `--series`, light/dark themes, and custom color palettes. Unlike the other CLIs it wraps no external API — no account or credentials needed. New `tools/integrations/graphify.md` guide, new "Data Visualization" category in `tools/REGISTRY.md`.
+- Added `tools/integrations/flick.md` for Flick (flick.social) — Instagram/TikTok hashtag research, tracking, scheduling, and AI captions. No public developer API, so this is a documentation-only entry (like `sparktoro`) guiding agents through the web app rather than a CLI/API wrapper. Added to the `Social Media` category in `tools/REGISTRY.md`.
 
 ### 2.10.0 (2026-07-22)
 
