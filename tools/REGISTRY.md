@@ -91,6 +91,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | gong | Revenue Intelligence | ✓ | - | - | - | [gong.md](integrations/gong.md) |
 | airops | AI Content | ✓ | - | [✓](clis/airops.js) | - | [airops.md](integrations/airops.md) |
 | buffer | Social | ✓ | - | [✓](clis/buffer.js) | - | [buffer.md](integrations/buffer.md) |
+| flick | Social | - | - | - | - | [flick.md](integrations/flick.md) |
 | wistia | Video | ✓ | - | [✓](clis/wistia.js) | - | [wistia.md](integrations/wistia.md) |
 | heygen | Video | ✓ | ✓ | - | ✓ | [heygen.md](integrations/heygen.md) |
 | hyperframes | Video | - | - | ✓ | ✓ | [hyperframes.md](integrations/hyperframes.md) |
@@ -107,6 +108,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | strapi | Headless CMS | ✓ | - | ✓ | ✓ | [strapi.md](integrations/strapi.md) |
 | composio | Integration Layer | ✓ | ✓ | ✓ | ✓ | [composio.md](integrations/composio.md) |
 | cogny | Integration Layer | - | ✓ | - | - | [cogny.md](integrations/cogny.md) |
+| graphify | Data Visualization | - | - | [✓](clis/graphify.js) | - | [graphify.md](integrations/graphify.md) |
 
 ---
 
@@ -289,8 +291,9 @@ Social media scheduling, management, and analytics.
 | Tool | Best For | Notes |
 |------|----------|-------|
 | **buffer** | Social scheduling, analytics | Multi-platform |
+| **flick** | Instagram/TikTok hashtag research, tracking, AI captions | No public API — web/app only |
 
-**Agent recommendation**: Buffer for scheduling and analytics across social platforms.
+**Agent recommendation**: Buffer for scheduling and analytics across social platforms with API access. Flick for Instagram/TikTok hashtag research and tracking — no API, so guide the user through the web app rather than automating it.
 
 ### Video
 
@@ -544,6 +547,16 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **exa** - AI-powered web search for LLMs and agents
 
 To use MCP tools, ensure the appropriate MCP server is configured in your environment.
+
+### Data Visualization
+
+Turn campaign data into charts for reports, dashboards, and decks.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **graphify** | Bar, line, pie, and sparkline SVG charts from CSV/JSON | Zero-dependency CLI, no API key or account needed |
+
+**Agent recommendation**: Use graphify to render any CLI/API tool's tabular output (spend by channel, traffic trends, funnel breakdowns) straight into an SVG chart for a report — no external charting service required.
 
 ### Composio Integration
 
