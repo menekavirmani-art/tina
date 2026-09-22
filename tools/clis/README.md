@@ -12,6 +12,8 @@ Every CLI is a standalone Node.js script (Node 18+) with no `npm install` requir
 node tools/clis/ahrefs.js backlinks list --target example.com
 ```
 
+> `graphify.js` is the one exception: it doesn't call an API. It's a zero-dependency local tool that turns CSV/JSON data into SVG charts (bar, line, pie, sparkline) for reports and dashboards — no credentials needed.
+
 ### Option 2: Symlink for global access
 
 ```bash
@@ -131,6 +133,19 @@ semrush keywords overview --phrase "saas marketing" --database us > keywords.jso
 DOMAINS=$(rewardful affiliates list | jq -r '.data[].email')
 ```
 
+`graphify` is the exception — it writes an SVG chart (to `--out <file>` or stdout), not JSON, since the chart itself is the output. Pass `--out` to also get a JSON confirmation with the file path and row count.
+
+```bash
+# Grouped bar chart from a CSV, colored by the "channel" column
+graphify bar --data spend.csv --x month --y spend --series channel --title "Spend by Channel" --out chart.svg
+
+# Pie chart from JSON piped over stdin
+cat mix.json | graphify pie --label channel --value spend --out mix.svg
+
+# Sparkline for a KPI tile
+graphify sparkline --data revenue.csv --y value --out spark.svg
+```
+
 ## Available CLIs
 
 | CLI | Category | Tool |
@@ -154,6 +169,7 @@ DOMAINS=$(rewardful affiliates list | jq -r '.data[].email')
 | `ga4.js` | Analytics | [Google Analytics 4](https://analytics.google.com) |
 | `google-ads.js` | Ads | [Google Ads](https://ads.google.com) |
 | `google-search-console.js` | SEO | [Google Search Console](https://search.google.com/search-console) |
+| `graphify.js` | Data Viz | Local — no API |
 | `hotjar.js` | CRO | [Hotjar](https://hotjar.com) |
 | `hunter.js` | Email Outreach | [Hunter.io](https://hunter.io) |
 | `instantly.js` | Email Outreach | [Instantly.ai](https://instantly.ai) |

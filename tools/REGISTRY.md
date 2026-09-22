@@ -107,6 +107,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | strapi | Headless CMS | ✓ | - | ✓ | ✓ | [strapi.md](integrations/strapi.md) |
 | composio | Integration Layer | ✓ | ✓ | ✓ | ✓ | [composio.md](integrations/composio.md) |
 | cogny | Integration Layer | - | ✓ | - | - | [cogny.md](integrations/cogny.md) |
+| graphify | Data Visualization | - | - | [✓](clis/graphify.js) | - | [graphify.md](integrations/graphify.md) |
 
 ---
 
@@ -544,6 +545,16 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **exa** - AI-powered web search for LLMs and agents
 
 To use MCP tools, ensure the appropriate MCP server is configured in your environment.
+
+### Data Visualization
+
+Turn campaign data into charts for reports, dashboards, and decks.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **graphify** | Bar, line, pie, and sparkline SVG charts from CSV/JSON | Zero-dependency CLI, no API key or account needed |
+
+**Agent recommendation**: Use graphify to render any CLI/API tool's tabular output (spend by channel, traffic trends, funnel breakdowns) straight into an SVG chart for a report — no external charting service required.
 
 ### Composio Integration
 
