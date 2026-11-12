@@ -5,7 +5,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | Skill | Version | Last Updated |
 |-------|---------|--------------|
 | ab-testing | 2.0.0 | 2026-05-05 |
-| ad-creative | 2.8.0 | 2026-07-14 |
+| ad-creative | 2.8.1 | 2026-11-12 |
 | ai-seo | 2.2.0 | 2026-07-09 |
 | analytics | 2.0.1 | 2026-07-22 |
 | aso | 2.0.0 | 2026-05-05 |
@@ -24,7 +24,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | directory-submissions | 2.0.0 | 2026-05-05 |
 | emails | 2.0.0 | 2026-05-05 |
 | free-tools | 2.0.0 | 2026-05-05 |
-| image | 2.0.1 | 2026-05-18 |
+| image | 2.0.2 | 2026-11-12 |
 | influencer-marketing | 1.0.0 | 2026-07-15 |
 | launch | 2.0.1 | 2026-06-16 |
 | lead-magnets | 2.0.0 | 2026-05-05 |
@@ -51,10 +51,14 @@ Current versions of all skills. Agents can compare against local versions to che
 | signup | 2.0.0 | 2026-05-05 |
 | site-architecture | 2.0.0 | 2026-05-05 |
 | sms | 1.0.0 | 2026-05-21 |
-| social | 2.2.0 | 2026-07-09 |
-| video | 2.1.0 | 2026-07-14 |
+| social | 2.2.1 | 2026-11-12 |
+| video | 2.1.1 | 2026-11-12 |
 
 ## Recent Changes
+
+### 2.10.1 (2026-11-12)
+
+- **ad-creative** (2.8.0 → 2.8.1), **video** (2.1.0 → 2.1.1), **image** (2.0.1 → 2.0.2), **social** (2.2.0 → 2.2.1): point to **Open Higgsfield AI**, an open-source (MIT) studio for generating images and videos from many models behind one Kie.ai key. The app now lives in `apps/open-higgsfield-ai/` (imported from Autom8AI/open-higgsfield-ai, with a Tailwind build fix and the API-key screen corrected to name Kie.ai). New integration guide `tools/integrations/open-higgsfield-ai.md` and a REGISTRY entry.
 
 ### 2.10.0 (2026-07-22)
 

@@ -2,7 +2,7 @@
 name: ad-creative
 description: "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'ad performance optimization,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'static ad concepts,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'fake DM ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'animated explainer ad,' 'motion collage ad,' or 'I need more ad variations.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
 metadata:
-  version: 2.8.0
+  version: 2.8.1
 ---
 
 # Ad Creative
@@ -165,6 +165,8 @@ For image and video generation tools, see [references/generative-tools.md](refer
 - **Code-based video** — Remotion for templated, data-driven video at scale
 - **Platform image specs** — Correct dimensions for every ad placement
 - **Cost comparison** — Pricing for 100+ ad variations across tools
+
+**For a hands-on studio UI** covering many of these models behind one Kie.ai key (Nano Banana, GPT Image, Veo, Kling, Seedance, Sora, plus lip sync), use Open Higgsfield AI — see [open-higgsfield-ai.md](../../tools/integrations/open-higgsfield-ai.md). Good for exploring visual directions and animating approved statics before you commit to a scaled pipeline.
 
 **Recommended workflow for scaled production:**
 1. Generate hero creative with AI tools (exploratory, high-quality)
@@ -395,6 +397,8 @@ For pulling performance data and managing campaigns, see the [tools registry](..
 | **Meta Ads** | `meta-ads insights get` | `meta-ads campaigns list` | [meta-ads.md](../../tools/integrations/meta-ads.md) |
 | **LinkedIn Ads** | `linkedin-ads analytics get` | `linkedin-ads campaigns list` | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
 | **TikTok Ads** | `tiktok-ads reports get` | `tiktok-ads campaigns list` | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md) |
+
+For generating ad visuals and short video ads in a UI, see [open-higgsfield-ai.md](../../tools/integrations/open-higgsfield-ai.md).
 
 ### Workflow: Pull Data, Analyze, Generate
 
