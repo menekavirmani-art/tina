@@ -2,7 +2,7 @@
 name: video
 description: "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
 metadata:
-  version: 2.1.0
+  version: 2.1.1
 ---
 
 # Video
@@ -146,6 +146,7 @@ Generate original footage from text or image prompts. Use for B-roll, hero visua
 - **Self-hosted, brand-controlled**: Hunyuan Video or Wan 2 (open weights)
 - **Storyboard → video workflow**: Runway, LTX Studio
 - **Image-to-video from a still you already have**: Kling, Pika, Runway
+- **Try several models from one UI**: Open Higgsfield AI (Veo, Kling, Seedance, Wan, Sora behind one Kie.ai key; see [open-higgsfield-ai.md](../../tools/integrations/open-higgsfield-ai.md))
 
 ### Prompting for Video Models
 
@@ -333,6 +334,7 @@ Output: Ready-to-publish video
 |------|------|:---:|-------|
 | **HeyGen** | AI avatars | Yes | [heygen.md](../../tools/integrations/heygen.md) |
 | **Hyperframes** | Programmatic video | - | [hyperframes.md](../../tools/integrations/hyperframes.md) |
+| **Open Higgsfield AI** | AI generation studio (UI) | - | [open-higgsfield-ai.md](../../tools/integrations/open-higgsfield-ai.md) |
 | **Remotion** | Programmatic video | - | [remotion.dev](https://www.remotion.dev/docs) |
 | **Runway** | AI generation | - | [runwayml.com/docs](https://docs.dev.runwayml.com) |
 

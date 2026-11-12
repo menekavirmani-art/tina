@@ -17,4 +17,7 @@ ELECTRON_SKIP_BINARY_DOWNLOAD=1 npm run setup
 npm run dev
 ```
 
-Open http://localhost:3000 and enter a Muapi.ai API key to generate.
+Open http://localhost:3000 and enter a Kie.ai API key to generate.
+
+- `components/ApiKeyModal.js`: the key screen asked for a Muapi.ai key, but the studio sends the key to
+  the Kie.ai API (`api.kie.ai`). Relabeled it as a Kie.ai key and linked to https://kie.ai/api-key.

@@ -26,14 +26,14 @@ export default function ApiKeyModal({ onSave }) {
             Open Higgsfield AI
           </h1>
           <p className="text-white/40 text-sm">
-            Enter your <a href="https://muapi.ai" target="_blank" rel="noreferrer" className="text-[#d9ff00] hover:underline">Muapi.ai</a> API key to start generating
+            Enter your <a href="https://kie.ai/api-key" target="_blank" rel="noreferrer" className="text-[#d9ff00] hover:underline">Kie.ai</a> API key to start generating
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-xs font-bold text-white/40 uppercase tracking-widest mb-2">
-              Muapi API Key
+              Kie.ai API Key
             </label>
             <input
               type="password"
@@ -56,8 +56,8 @@ export default function ApiKeyModal({ onSave }) {
 
           <p className="text-center text-xs text-white/30">
             Don&apos;t have a key?{' '}
-            <a href="https://muapi.ai" target="_blank" rel="noreferrer" className="text-[#d9ff00] hover:underline">
-              Get one free at Muapi.ai →
+            <a href="https://kie.ai/api-key" target="_blank" rel="noreferrer" className="text-[#d9ff00] hover:underline">
+              Get one at Kie.ai →
             </a>
           </p>
         </form>
