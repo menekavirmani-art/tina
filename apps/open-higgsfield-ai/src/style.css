@@ -1,0 +1,36 @@
+@import './styles/global.css';
+@import './styles/studio.css';
+
+/* App-specific layout */
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-app);
+}
+
+main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Assistant docked beside the Library (main.js sets data-docked on the
+   chat root): shrink to a side chat — drop the hero and starter chips. */
+[data-docked="1"] .assistant-hero,
+[data-docked="1"] .assistant-starters {
+  display: none;
+}
+
+/* Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
