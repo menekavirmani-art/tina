@@ -30,7 +30,7 @@ uuid.workspace = true
 [dev-dependencies]
 tokio = { workspace = true, features = ["full"] }
 uuid = "1.6.1"
-rand = { version = "0.8", features = ["std_rng"] }
+rand = { version = "0.9", features = ["std_rng"] }
 
 [features]
 dart = ["flowy-codegen/dart", "flowy-notification/dart"]
