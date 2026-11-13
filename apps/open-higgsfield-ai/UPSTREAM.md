@@ -9,6 +9,11 @@ Imported from https://github.com/Autom8AI/open-higgsfield-ai at commit `253dc94`
   `@tailwindcss/postcss`, using the studio package's theme, and moved the global reset into
   `@layer base` so it no longer overrides Tailwind's padding/margin utilities.
 
+- `packages/studio/src/kie.js`: Kie.ai rejected the default "Nano Banana" model names
+  (`nano-banana`, `nano-banana-edit`: "model name not supported"). Switched to `google/nano-banana` and
+  `google/nano-banana-edit`, which take `png` output, `image_size` for the aspect ratio and `image_urls`
+  for edit inputs. Verified with a live generation.
+
 ## Run
 
 ```bash

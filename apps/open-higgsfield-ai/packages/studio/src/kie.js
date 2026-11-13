@@ -69,7 +69,7 @@ function imageSlug(params) {
     const id = params.model || '';
     if (id.includes('nano-banana-pro')) return 'nano-banana-pro';
     if (id.includes('nano-banana-2')) return 'nano-banana-2';
-    if (id.includes('nano-banana')) return 'nano-banana';
+    if (id.includes('nano-banana')) return 'google/nano-banana';
     if (id.includes('grok')) return 'grok-imagine/text-to-image';
     return 'nano-banana-2';
 }
@@ -80,14 +80,17 @@ function editSlug(params) {
     if (id.includes('gpt')) return 'gpt-image-2-image-to-image';
     if (id.includes('nano-banana-pro')) return 'nano-banana-pro';
     if (id.includes('nano-banana-2')) return 'nano-banana-2';
-    if (id.includes('nano-banana')) return 'nano-banana-edit';
-    return 'nano-banana-edit';
+    if (id.includes('nano-banana')) return 'google/nano-banana-edit';
+    return 'google/nano-banana-edit';
 }
 
-function imageInput(params, edit) {
-    const input = { output_format: 'jpg' };
+function imageInput(params, edit, slug = '') {
+    // Kie's google/nano-banana(-edit) models take png/jpeg and `image_size`
+    // for the aspect ratio; the newer nano-banana-2/pro models take jpg and `aspect_ratio`.
+    const legacyGoogle = slug.startsWith('google/');
+    const input = { output_format: legacyGoogle ? 'png' : 'jpg' };
     if (params.prompt) input.prompt = params.prompt;
-    if (params.aspect_ratio) input.aspect_ratio = params.aspect_ratio;
+    if (params.aspect_ratio) input[legacyGoogle ? 'image_size' : 'aspect_ratio'] = params.aspect_ratio;
     if (params.resolution) input.resolution = String(params.resolution).toUpperCase().replace('K', 'K');
     if (params.seed !== undefined && params.seed !== -1) input.seed = params.seed;
 
@@ -97,6 +100,7 @@ function imageInput(params, edit) {
             const id = params.model || '';
             if (id.includes('qwen')) input.image_url = images[0];
             else if (id.includes('gpt')) input.input_urls = images;
+            else if (legacyGoogle) input.image_urls = images;
             else input.image_input = images;
         } else {
             input.image_input = images;
@@ -152,13 +156,13 @@ function videoInput(params, settings) {
 
 export async function generateImage(apiKey, params) {
     const slug = imageSlug(params);
-    const input = imageInput(params, false);
+    const input = imageInput(params, false, slug);
     return submitTask(apiKey, slug, input, params.onRequestId, 60);
 }
 
 export async function generateI2I(apiKey, params) {
     const slug = editSlug(params);
-    const input = imageInput(params, true);
+    const input = imageInput(params, true, slug);
     return submitTask(apiKey, slug, input, params.onRequestId, 60);
 }
 
