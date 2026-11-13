@@ -95,6 +95,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | heygen | Video | ✓ | ✓ | - | ✓ | [heygen.md](integrations/heygen.md) |
 | hyperframes | Video | - | - | ✓ | ✓ | [hyperframes.md](integrations/hyperframes.md) |
 | open-higgsfield-ai | Video | - | - | - | - | [open-higgsfield-ai.md](integrations/open-higgsfield-ai.md) |
+| whisper | Transcription | - | - | ✓ | ✓ | [whisper.md](integrations/whisper.md) |
 | appflowy | Workspace & Docs | ✓ | ✓ | [✓](clis/appflowy.js) | - | [appflowy.md](integrations/appflowy.md) |
 | trustpilot | Reviews | ✓ | - | [✓](clis/trustpilot.js) | - | [trustpilot.md](integrations/trustpilot.md) |
 | g2 | Reviews | ✓ | - | [✓](clis/g2.js) | - | [g2.md](integrations/g2.md) |
@@ -547,6 +548,14 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **exa** - AI-powered web search for LLMs and agents
 
 To use MCP tools, ensure the appropriate MCP server is configured in your environment.
+
+### Transcription
+
+Speech-to-text for interviews, calls, podcasts and video captions.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **whisper** | Local transcription, captions, translation | Open source (MIT), in `apps/`; runs offline, no API key |
 
 ### Workspace & Docs
 
