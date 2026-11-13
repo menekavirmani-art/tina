@@ -50,7 +50,7 @@ num_enum.workspace = true
 
 [dev-dependencies]
 fake = "2.0.0"
-rand = "0.8.4"
+rand = "0.9.1"
 quickcheck = "1.0.3"
 rand_core = "0.6.2"
 quickcheck_macros = "1.0"

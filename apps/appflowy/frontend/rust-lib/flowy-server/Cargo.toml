@@ -39,7 +39,7 @@ flowy-storage-pub = { workspace = true }
 flowy-ai-pub = { workspace = true }
 tokio-util = "0.7"
 tokio-stream = { workspace = true, features = ["sync"] }
-rand = "0.8.5"
+rand = "0.9.1"
 semver = "1.0.23"
 flowy-sqlite = { workspace = true }
 flowy-ai = { workspace = true }
