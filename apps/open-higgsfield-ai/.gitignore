@@ -29,3 +29,5 @@ dist-ssr
 # Next.js build output
 .next
 next-env.d.ts
+out
+.netlify
