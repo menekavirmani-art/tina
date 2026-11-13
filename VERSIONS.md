@@ -56,6 +56,10 @@ Current versions of all skills. Agents can compare against local versions to che
 
 ## Recent Changes
 
+### 2.10.3 (2026-11-13)
+
+- **Whisper** (tools only, no skill changes): OpenAI's open-source speech-to-text model now lives in `apps/whisper/` (imported from openai/whisper at `8609812`, MIT, unmodified). New integration guide `tools/integrations/whisper.md` covers install, model choice, captions, translation and voice-of-customer workflows, plus a REGISTRY entry.
+
 ### 2.10.2 (2026-11-13)
 
 - **AppFlowy** (tools only, no skill changes): the AppFlowy source now lives in `apps/appflowy/` (imported from AppFlowy-IO/AppFlowy at `8fcee27`, AGPL-3.0, unmodified). New zero-dependency `tools/clis/appflowy.js` works as a CLI and as a stdio MCP server (`appflowy.js mcp`) for AppFlowy Cloud: list workspaces and the page tree, create, append to, rename and trash pages, and list, read and add database rows. New integration guide `tools/integrations/appflowy.md` and REGISTRY entries.
