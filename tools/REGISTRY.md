@@ -95,6 +95,7 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 | heygen | Video | ✓ | ✓ | - | ✓ | [heygen.md](integrations/heygen.md) |
 | hyperframes | Video | - | - | ✓ | ✓ | [hyperframes.md](integrations/hyperframes.md) |
 | open-higgsfield-ai | Video | - | - | - | - | [open-higgsfield-ai.md](integrations/open-higgsfield-ai.md) |
+| appflowy | Workspace & Docs | ✓ | ✓ | [✓](clis/appflowy.js) | - | [appflowy.md](integrations/appflowy.md) |
 | trustpilot | Reviews | ✓ | - | [✓](clis/trustpilot.js) | - | [trustpilot.md](integrations/trustpilot.md) |
 | g2 | Reviews | ✓ | - | [✓](clis/g2.js) | - | [g2.md](integrations/g2.md) |
 | onesignal | Push | ✓ | - | [✓](clis/onesignal.js) | ✓ | [onesignal.md](integrations/onesignal.md) |
@@ -546,6 +547,14 @@ These tools have Model Context Protocol servers available, enabling direct agent
 - **exa** - AI-powered web search for LLMs and agents
 
 To use MCP tools, ensure the appropriate MCP server is configured in your environment.
+
+### Workspace & Docs
+
+Docs, wikis, and databases for plans, briefs, and content calendars.
+
+| Tool | Best For | Notes |
+|------|----------|-------|
+| **appflowy** | Self-hostable docs + databases (Notion alternative) | Open source (AGPL-3.0), source in `apps/`; MCP server via `clis/appflowy.js mcp` |
 
 ### Composio Integration
 

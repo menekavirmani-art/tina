@@ -39,6 +39,7 @@ Every CLI reads credentials from environment variables:
 | `activecampaign` | `ACTIVECAMPAIGN_API_KEY`, `ACTIVECAMPAIGN_API_URL` |
 | `adobe-analytics` | `ADOBE_ACCESS_TOKEN`, `ADOBE_CLIENT_ID`, `ADOBE_COMPANY_ID` |
 | `ahrefs` | `AHREFS_API_KEY` |
+| `appflowy` | `APPFLOWY_BASE_URL`, `APPFLOWY_TOKEN` or `APPFLOWY_EMAIL` + `APPFLOWY_PASSWORD` |
 | `amplitude` | `AMPLITUDE_API_KEY`, `AMPLITUDE_SECRET_KEY` |
 | `apollo` | `APOLLO_API_KEY` |
 | `beehiiv` | `BEEHIIV_API_KEY` |
@@ -139,6 +140,7 @@ DOMAINS=$(rewardful affiliates list | jq -r '.data[].email')
 | `adobe-analytics.js` | Analytics | [Adobe Analytics](https://business.adobe.com/products/analytics) |
 | `ahrefs.js` | SEO | [Ahrefs](https://ahrefs.com) |
 | `amplitude.js` | Analytics | [Amplitude](https://amplitude.com) |
+| `appflowy.js` | Workspace & Docs (also an MCP server: `appflowy.js mcp`) | [AppFlowy](https://appflowy.com) |
 | `apollo.js` | Data Enrichment | [Apollo.io](https://apollo.io) |
 | `beehiiv.js` | Newsletter | [Beehiiv](https://beehiiv.com) |
 | `brevo.js` | Email/SMS | [Brevo](https://brevo.com) |

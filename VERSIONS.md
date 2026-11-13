@@ -56,6 +56,10 @@ Current versions of all skills. Agents can compare against local versions to che
 
 ## Recent Changes
 
+### 2.10.2 (2026-11-13)
+
+- **AppFlowy** (tools only, no skill changes): the AppFlowy source now lives in `apps/appflowy/` (imported from AppFlowy-IO/AppFlowy at `8fcee27`, AGPL-3.0, unmodified). New zero-dependency `tools/clis/appflowy.js` works as a CLI and as a stdio MCP server (`appflowy.js mcp`) for AppFlowy Cloud: list workspaces and the page tree, create, append to, rename and trash pages, and list, read and add database rows. New integration guide `tools/integrations/appflowy.md` and REGISTRY entries.
+
 ### 2.10.1 (2026-11-12)
 
 - **ad-creative** (2.8.0 → 2.8.1), **video** (2.1.0 → 2.1.1), **image** (2.0.1 → 2.0.2), **social** (2.2.0 → 2.2.1): point to **Open Higgsfield AI**, an open-source (MIT) studio for generating images and videos from many models behind one Kie.ai key. The app now lives in `apps/open-higgsfield-ai/` (imported from Autom8AI/open-higgsfield-ai, with a Tailwind build fix and the API-key screen corrected to name Kie.ai). New integration guide `tools/integrations/open-higgsfield-ai.md` and a REGISTRY entry.
